@@ -2,7 +2,7 @@ FROM node:20-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json ./
-RUN npm config set registry https://registry.npmmirror.com
+RUN npm config set registry https://package-mirror.liara.ir/repository/npm/ --global
 RUN npm install
 
 FROM node:20-alpine AS builder
