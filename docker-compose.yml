@@ -12,6 +12,7 @@ services:
     environment:
       - NODE_ENV=production
       - NEXT_PUBLIC_SITE_URL=https://diwaj-co.ir/
+      - NEXTAUTH_URL=https://diwaj-co.ir/
     networks:
       - app-network
 
