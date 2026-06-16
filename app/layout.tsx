@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fa_IR',
   },
+  // ترفند طلایی: اجبار مرورگر به تبدیل لینک‌های ناامن HTTP به HTTPS در هوا
+  other: {
+    'Content-Security-Policy': 'upgrade-insecure-requests',
+  },
 }
 
 export const viewport: Viewport = {
