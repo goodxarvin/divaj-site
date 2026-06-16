@@ -1,5 +1,5 @@
 FROM node:20-alpine AS deps
-# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json ./
