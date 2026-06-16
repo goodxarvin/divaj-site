@@ -1,8 +1,9 @@
 FROM node:20-alpine AS deps
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json ./
-RUN npm config --global set registry https://mirror.abrha.net/repository/npm/
+RUN npm config set registry https://registry.npmmirror.com
 RUN npm install
 
 FROM node:20-alpine AS builder
