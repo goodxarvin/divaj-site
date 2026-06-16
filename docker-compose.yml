@@ -11,3 +11,5 @@ services:
       - "80:3000"
     environment:
       - NODE_ENV=production
+      - NEXT_PUBLIC_SITE_URL=https://diwaj-co.ir/
+
