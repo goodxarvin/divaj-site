@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, ArrowLeft } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 
 const contactItems = [
-  { icon: Phone, label: 'تلفن', value: '۰۹۱۳-۸۰۹۰-۳۲۰' },
+  { icon: Phone, label: 'تلفن', value: '۰۹۱۳-۸۰۹-۰۳۲۰' },
   { icon: MapPin, label: 'نشانی', value: 'اصفهان، شهرک صنعتی جی، نبش خیابان چهارم' },
 ]
 
